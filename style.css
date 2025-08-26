@@ -1,0 +1,53 @@
+/* Logo Header */
+.logo-header {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #0a0a0a;
+}
+
+.syberhub-logo {
+  max-width: 320px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #00ffff);
+}
+
+/* Carousel Styles */
+#flyer-carousel {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#prev { left: 10px; }
+#next { right: 10px; }
