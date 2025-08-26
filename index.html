@@ -1,0 +1,128 @@
+<!DOCTYPE html><header class="logo-header">
+  <img src="your-logo-path.png" alt="SyberHub Logo" class="syberhub-logo" />
+</header>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SyberHub Internet Café</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script>
+  const track = document.querySelector('.carousel-track');
+  const items = document.querySelectorAll('.carousel-item');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+  let index = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + items.length) % items.length;
+    updateCarousel();
+  });
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % items.length;
+    updateCarousel();
+  });
+</script>
+
+<body>
+
+  <!-- Animated Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="assets/thumbnails/bg-animated.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">SYBERHUB</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to SyberHub</h1>
+    <p>Your Local Internet Café & Tech Solutions Hub</p>
+  </section>
+
+  <!-- Introductory Animated Video -->
+  <section class="intro-video">
+    <video autoplay muted loop playsinline width="100%" height="auto" id="syberhub-intro">
+      <source src="assets/thumbnails/syberhub-intro.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Internet Café Access</h3>
+        <p>Fast, reliable internet access for browsing, printing, scanning, and more.</p>
+      </div>
+      <div class="service-card">
+        <h3>Web Design</h3>
+        <p>Custom websites for individuals, businesses, and startups — built with clean code and responsive layouts.</p>
+      </div>
+      <div class="service-card">
+        <h3>Graphic Design</h3>
+        <p>Logos, flyers, business cards, banners, and branded templates for print and digital use.</p>
+      </div>
+      <div class="service-card">
+        <h3>Software Installation & Updates</h3>
+        <p>Linux and Windows software setup, antivirus installation, and system optimization.</p>
+      </div>
+      <div class="service-card">
+        <h3>Company Registrations</h3>
+        <p>Assistance with registering businesses, creating CIPC profiles, and preparing startup documents.</p>
+      </div>
+      <div class="service-card">
+        <h3>SARS eFiling & Tax Help</h3>
+        <p>Support with SARS registration, eFiling setup, and basic tax submissions.</p>
+      </div>
+      <div class="service-card">
+        <h3>Gaming Zone</h3>
+        <p>Access to popular PC games, multiplayer setups, and casual gaming sessions for all ages.</p>
+      </div>
+      <div class="service-card">
+        <h3>Business Plans</h3>
+        <p>Professional business plans tailored for startups, funding applications, and strategic growth.</p>
+      </div>
+      <div class="service-card">
+        <h3>Company Profiles</h3>
+        <p>Branded company profiles for marketing, tenders, and client presentations — designed to impress.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About SyberHub</h2>
+    <p>SyberHub is a community-driven internet café and tech solutions center based in Mzinti, Nkomazi. We offer digital services, creative design, and business support — all optimized for local needs and low-spec hardware. Whether you're gaming, registering a company, or building your brand, we’ve got you covered.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Address: Mzinti, Stand No. 433, Nkomazi</p>
+    <p>📱 WhatsApp: <a href="https://wa.me/27723491361" target="_blank">072 349 1361</a></p>
+    <p>📧 Email: <a href="mailto:syberhub@yourdomain.com">syberhub@yourdomain.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SyberHub Internet Café. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
