@@ -1,0 +1,55 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Wireframe Boxes */
+.box {
+  border: 2px dashed #999;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Header Layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box {
+  flex: 1;
+  margin: 5px;
+}
+
+/* Hero Section */
+.hero {
+  height: 200px;
+}
+
+/* Services Grid */
+.services .grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.services .box {
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
